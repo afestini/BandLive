@@ -2,11 +2,12 @@
 
 A band management game based on the core gameplay of Rock Band and Guitar Hero.
 
-![Logo here](https://github.com/afestini/BandLive/blob/main/page/title.jpg)
+![Logo here](/page/title.jpg)
 
 Still in a very early state with "beautiful" placeholder graphics. (You thought OpenGL Immediate Mode died decades ago? Nope, it's still convenient for quick and dirty prototypes)
 
-[![See it in action](https://img.youtube.com/vi/1sE4Zg6Y-NQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=1sE4Zg6Y-NQ)
+## See it in action
+[![](/page/yt_thumb.jpg)](https://www.youtube.com/watch?v=1sE4Zg6Y-NQ)
 
 ## What's in the box (so far)?
 
@@ -20,7 +21,7 @@ Still in a very early state with "beautiful" placeholder graphics. (You thought 
 
 Download, extract, run. Well, almost. Unless you want to copy your song library into the songs directory, you will need to edit the config.ini.
 
-Either change the existing song_folder entry or add a new one. Song location is a filter and sorting criteria, so having multiple folders configured can be useful.
+Either change the existing song_folder entry or add a new one. Song location is a filter and sorting criteria in the song list, so having multiple folders configured can be useful to get the songs you want more quickly.
 
 If you also want to use a Rock Band keyboard without going through MIDI, you need to force Windows to use WinUSB drivers. The short version:
 * Device Manager -> Harmonix RB3 Keyboard
@@ -58,9 +59,9 @@ Maybe. The current state is more of a practice mode to allow for debugging and d
 * fast forward/backward with up/down keys
 * skip forward/backward 10s with +/- keys
 * quick change difficulties for all players with left/right keys
-* quick song select (insert/del for next/previous song, home/end jumps 20 songs, page up/down jumps 200 songs)
+* quick song select (insert/delete for next/previous song, home/end jumps 20 songs, page up/down jumps 200 songs)
 * slow-mo.. press 'S' to go extra slow. This is really just to debug and will make you fall asleep otherwise
-* mute game.. press 'M' to mute/unmute if a song just really annoys you
+* mute game.. press 'M' to mute/unmute a song that really annoys you
 * 'C', 'V' to place loop markers. The song will loop the selected section until you clear the markers with 'X'
 * 'R' to quickly restart the song
 * 'T' will show some realtime profiling info. If you have lousy performance, this is where you go and let me know which one is the problem
