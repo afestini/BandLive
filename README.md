@@ -11,27 +11,20 @@ Still in a very early state with "beautiful" placeholder graphics. (You thought 
 
 ## What's in the box (so far)?
 
-* All instruments (except Pro Guitar)
+* All instruments
 * Vocals and Harmonies
 * Support for MIDI instruments
 * Support for RB3 Keyboard
+* Support for RB3 Pro Guitar
 * Support for songs in .mid format
+* Support for CON files (single song and packs)
+* Trills, strum lanes, glissandos (experimental)
 
 ## How do I try it?
 
 Download, extract, run. Well, almost. Unless you want to copy your song library into the songs directory, you will need to edit the config.ini.
 
 Either change the existing song_folder entry or add a new one. Song location is a filter and sorting criteria in the song list, so having multiple folders configured can be useful to get the songs you want more quickly.
-
-If you also want to use a Rock Band keyboard without going through MIDI, you need to force Windows to use WinUSB drivers. The short version:
-* Device Manager -> Harmonix RB3 Keyboard
-* Update Drivers
-* Browse My Computer...
-* Let me pick from a list...
-* Uncheck "Show compatible hardware"
-* WinUsb Device -> WinUsb Device
-
-Only tested with the PS3 version, but there is a good chance the Wii version will work as well.
 
 ## I have a proper MIDI keyboard/drum kit, but lost my adapter
 
@@ -51,19 +44,21 @@ Sure. Bring them all...
 
 ![Almost full band](https://github.com/afestini/BandLive/blob/main/page/fullband.jpg)
 
-Better bring a big ultra wide screen, though. There are some limits, however. SFML can only handle 8 controllers. On the bright side, the RB3 Keyboards are handled differently and don't count. So the theoretical limit is currently 10 players with instruments, up to three of those could also sing harmonies.
-
 ## Anything special beyond the other clones?
 
 Maybe. The current state is more of a practice mode to allow for debugging and developing. That gives you a lot of options you won't have when playing properly, like:
-* fast forward/backward with up/down keys
-* skip forward/backward 10s with +/- keys
-* quick change difficulties for all players with left/right keys
+* up/down cursor keys to fast forward/backward
+* +/- num keys to skip forward/backward 10s
+* left_right cursor keys to quick change difficulties for all players
 * quick song select (insert/delete for next/previous song, home/end jumps 20 songs, page up/down jumps 200 songs)
-* slow-mo.. press 'S' to go extra slow. This is really just to debug and will make you fall asleep otherwise
-* mute game.. press 'M' to mute/unmute a song that really annoys you
+* 'Tab' to open/close song list
+* 'S' to toggle slow-mo. This is really just to debug and will make you fall asleep otherwise
+* 'M' to mute/unmute a song that really annoys you
 * 'C', 'V' to place loop markers. The song will loop the selected section until you clear the markers with 'X'
 * 'R' to quickly restart the song
+* 'K' to calibrate audio, video and microphone
+* 'J' to auto calibrate (only PS3 pro guitar controller for now)
+* 'L' to reload config.ini without restarting
 * 'T' will show some realtime profiling info. If you have lousy performance, this is where you go and let me know which one is the problem
 * 'F' if you want to see how the pitch detection sausage is made. The waveform at the top might be useful to troubleshoot your microphone.
 
